@@ -27,9 +27,14 @@
   height: 90px;
   background-color: darkblue;
 }
+.gridbtn.correct {
+    background-color: green;
+}
+.gridbtn.wrong {
+    background-color: red;
+}
 .gridstyling {
     display: grid;
-    grid-template-rows: [ten] 1fr [fifty] 1fr [onehundred] 1fr [fivehundred] 1fr [onethousand] 1fr;
     grid-auto-flow: column;
     grid-gap: 10px;
 }
@@ -47,6 +52,9 @@
 #score1 {
   color: green;
   font-size: 30px;
+}
+#score1.negative {
+    color: red;
 }
 .navbar-header {
   max-width: 900px;
@@ -71,14 +79,6 @@
   width: 100vw;
   align-content: center;
 }
-/*.question {*/
-    /*height:100px;*/
-    /*vertical-align: middle;*/
-    /*text-align: center;*/
-    /*font-size: 1.5em;*/
-    /*padding-top: 15px;*/
-    /*cursor: pointer;*/
-/*}*/
 .gametitle {
   display: flex;
   align-items: center;
