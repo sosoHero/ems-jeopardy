@@ -23,22 +23,22 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- Background music -->
                 <audio controls autoplay>
-                    <source src="sounds/Jeopardy-theme-song.mp3" type="audio/mpeg">
+                    <source src="sounds/jeopardy-theme-song.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
                 <audio id="buzzer">
-                    <source src="sounds/Wrong-answer-sound-effect.mp3" type="audio/mpeg">
-                    Your browser does not support HTML5 video.
+                    <source src="sounds/wrong-answer-sound-effect.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
                 </audio>
                 <audio id="chaching">
-                    <source src="sounds/Cash-register-sound.wav" type="audio/mpeg">
-                    Your browser does not support HTML5 video.
+                    <source src="sounds/correct-answer-sound-effect.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
                 </audio>
             </ul>
         </div>
     </div>
     <div class="logo">
-        <img src="css/images/Jeopardy.png" alt="Jeopardy Logo" id="topjlogo">
+        <img src="images/jeopardy.png" alt="Jeopardy Logo" id="topjlogo">
     </div>
     <div>
         <div id="main-board">
@@ -46,18 +46,17 @@
             <div>
                 <div class="bs-example">
                     <!-- Modal HTML -->
-                    <div id="myModal" class="modal fade">
+                    <div id="questionModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title">Modal Window</h4>
+                                    <h4 class="modal-title">Question</h4>
                                 </div>
                                 <div class="modal-body">
                                 </div>
                                 <div class="modal-footer">
-                                    <button id="closesubmit" type="button" class="btn btn-primary clickable"
-                                            onclick="submit()">
+                                    <button id="closesubmit" type="button" class="btn btn-primary clickable" onclick="submit()">
                                         Submit
                                     </button>
                                 </div>
@@ -70,7 +69,7 @@
             <div class="gridstyling" id="questions"></div>
             <!-- Footer & Dynamic scoreboard -->
             <div class="panel-footer">
-                <div class="scoretally pull-right"><h4>Score:<span id="score1">      </span></h4></div>
+                <div class="scoretally pull-right"><h4>Score: <span id="score1"></span></h4></div>
                 <div class="clearfix"></div>
             </div>
         </div>

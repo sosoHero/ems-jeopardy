@@ -3,8 +3,8 @@
 }
 
 #topjlogo {
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 @font-face {
   font-family: "Korinna BT";
@@ -27,16 +27,19 @@
   height: 90px;
   background-color: darkblue;
 }
+.gridbtn.answered {
+  opacity: 0.5;
+}
 .gridbtn.correct {
-    background-color: green;
+  background-color: green;
 }
 .gridbtn.wrong {
-    background-color: red;
+  background-color: red;
 }
 .gridstyling {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
 }
 .qcategory-title, .question, .scoretally {
   font-family: Korinna BT;
@@ -54,7 +57,7 @@
   font-size: 30px;
 }
 #score1.negative {
-    color: red;
+  color: red;
 }
 .navbar-header {
   max-width: 900px;
@@ -97,5 +100,5 @@ h1 {
   color: red;
 }
 p {
-font-size: 20px;
+  font-size: 20px;
 }
